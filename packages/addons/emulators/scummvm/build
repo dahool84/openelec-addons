@@ -28,8 +28,6 @@ cd $PKG_BUILD
             --prefix=$LIB_PREFIX \
             --backend=sdl \
             --enable-all-engines \
-            --enable-plugins \
-            --default-dynamic \
             --enable-mt32emu \
 
 make

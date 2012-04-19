@@ -7,7 +7,7 @@ mkdir -p "/storage/emulators/scummvm/roms"
 export LD_LIBRARY_PATH=$ADDON_DIR/bin/
 
 chmod a+rx "$ADDON_DIR/bin/scummvm"
-"$ADDON_DIR/bin/scummvm" -f
+"$ADDON_DIR/bin/scummvm"
 
 sleep 7
 killall -STOP xbmc.bin
