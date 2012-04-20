@@ -1,0 +1,37 @@
+################################################################################
+#      This file is part of OpenELEC - http://www.openelec.tv
+#      Copyright (C) 2009-2011 Stephan Raue (stephan@openelec.tv)
+#
+#  This Program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2, or (at your option)
+#  any later version.
+#
+#  This Program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with OpenELEC.tv; see the file COPYING.  If not, write to
+#  the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
+#  http://www.gnu.org/copyleft/gpl.html
+################################################################################
+
+PKG_NAME="scummvm"
+PKG_VERSION="1.4.1"
+PKG_REV="1.2"
+PKG_ARCH="any"
+PKG_LICENSE="free"
+PKG_SITE="http://http://www.scummvm.org"
+PKG_URL="http://sourceforge.net/projects/scummvm/files/$PKG_NAME/$PKG_VERSION/$PKG_NAME-$PKG_VERSION.tar.bz2"
+PKG_DEPENDS="SDL SDL_image SDL_mixer zlib"
+PKG_BUILD_DEPENDS="toolchain SDL SDL_image SDL_mixer zlib"
+PKG_PRIORITY="optional"
+PKG_SECTION="emulators"
+PKG_SHORTDESC="SCUMMVM"
+PKG_LONGDESC="ScummVM is a program which allows you to run certain classic graphical point-and-click adventure games, provided you already have their data files"
+PKG_IS_ADDON="yes"
+PKG_ADDON_TYPE="xbmc.python.script"
+
+PKG_AUTORECONF="no"
