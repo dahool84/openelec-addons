@@ -29,4 +29,4 @@ __param__ = __settings__.getSetting('param')
 __path__ = xbmc.translatePath( os.path.join( __cwd__, 'bin', "scummvm.sh") )
 
 os.system( "chmod a+rx " + __path__ )
-os.system( "%s %s"%(__path__,__param__))
+os.system( "%s "%(__path__))

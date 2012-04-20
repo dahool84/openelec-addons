@@ -7,12 +7,4 @@ mkdir -p "/storage/emulators/scummvm/roms"
 export LD_LIBRARY_PATH=$ADDON_DIR/bin/
 
 chmod a+rx "$ADDON_DIR/bin/scummvm"
-"$ADDON_DIR/bin/scummvm" -f
-
-sleep 7
-killall -STOP xbmc.bin
-
-while [ $(pidof scummvm) ];do
-usleep 200000
-done;
-killall -CONT xbmc.bin
+$ADDON_DIR/bin/scummvm --themepath=$ADDON_DIR/bin/
